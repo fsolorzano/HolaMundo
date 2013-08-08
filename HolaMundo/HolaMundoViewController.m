@@ -10,6 +10,18 @@
 
 @implementation HolaMundoViewController
 
+@synthesize mylabel;
+
+-(IBAction)sayHello:(id)sender{
+    
+    NSString *message = [[NSString alloc] initWithString:@"Hola Domun!!!!!"];   
+    
+    mylabel.text = message;
+    
+    [message release];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.

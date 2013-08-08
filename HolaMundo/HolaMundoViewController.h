@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HolaMundoViewController : UIViewController
+@interface HolaMundoViewController : UIViewController{
+    
+    IBOutlet UILabel *mylabel;
+    
+}
+
+@property (nonatomic,retain) IBOutlet UILabel *mylabel;
+
+-(IBAction)sayHello:(id)sender;
 
 @end
